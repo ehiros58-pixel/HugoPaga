@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Estática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .tarjeta {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 450px; /* Un poco más ancha para que el texto se lea bien */
+        }
+        h1 {
+            color: #333;
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .etiqueta-contador {
+            font-size: 1rem;
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .numero-contador {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #333;
+            margin: 5px 0 25px 0;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            transition: background-color 0.3s;
+            width: 100%; /* El botón ocupa todo el ancho disponible */
+        }
+        .btn-redireccion {
+            background-color: #0056b3;
+        }
+        .btn-redireccion:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tarjeta">
+        <h1> DEUDOR </h1>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGj_qG5P5g16w3rKQ8o8EnM76q7fqBRSeyuA&s" alt="FOTO DEL DEUDOR">
+
+        <p> Este joven debe 1600 pesos desde hace 2 meses(ya adelanto una parte).
+ </p>
+
+        <div class="etiqueta-contador">Contador actual</div>
+        <div class="numero-contador">$200/1600</div> 
+        <button class="btn-redireccion" onclick="window.location.href='https://www.instagram.com/bernal.toriello?igsh=MTh3d2FrNXZpbmtieQ=='">
+            SIGAN EN IG AL DEUDOR 
+        </button>
+    </div>
+
+</body>
+</html>
